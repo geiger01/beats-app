@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #122f60,
+    #3f3d6e,
+    #614d7b,
+    #7f5e87,
+    #9b7193
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+i {
+  color: rgb(185, 185, 185);
+  cursor: pointer;
+}
+
+select {
+  border-radius: 12px;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+  color: rgb(223, 223, 223);
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+select:hover {
+  transform: scale(1.1);
+}
+
+.main {
+  width: 80%;
+  height: 100vh;
+}
+
+.beat-row-wrapper {
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+
+  flex-direction: row;
+}
+
+.options {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.beat-pads {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 70%;
+}
+.pad {
+  background-color: #ffed99;
+  height: 4rem;
+  width: 5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.pad-2 {
+  background-color: #f6b8b8;
+}
+.pad-3 {
+  background-color: #ac66cc;
+}
+.pad-4 {
+  background-color: #b2a9ff;
+}
+
+.slidecontainer {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slidecontainer i {
+  margin-top: 2rem;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
+}
+
+.active-1 {
+  background-color: #ffd200;
+}
+.active-2 {
+  background-color: #b45555;
+}
+.active-3 {
+  background-color: #7100a5;
+}
+.active-4 {
+  background-color: #5343db;
+}
+
+.active-big {
+  transform: scale(1.5);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My-Beat</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="beat-row-wrapper">
+        <div class="options">
+          <i class="fas fa-volume-mute fa-2x"></i>
+          <h2>HI-hat</h2>
+          <select id="hi-hat">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="beat-pads hihat">
+          <div class="pad-1 pad p0"></div>
+          <div class="pad-1 pad p1"></div>
+          <div class="pad-1 pad p2"></div>
+          <div class="pad-1 pad p3"></div>
+          <div class="pad-1 pad p4"></div>
+          <div class="pad-1 pad p5"></div>
+          <div class="pad-1 pad p6"></div>
+          <div class="pad-1 pad p7"></div>
+        </div>
+      </div>
+      <div class="beat-row-wrapper">
+        <div class="options">
+          <i class="fas fa-volume-mute fa-2x"></i>
+          <h2>Clap</h2>
+          <select id="hi-hat">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="beat-pads clap">
+          <div class="pad-2 pad p0"></div>
+          <div class="pad-2 pad p1"></div>
+          <div class="pad-2 pad p2"></div>
+          <div class="pad-2 pad p3"></div>
+          <div class="pad-2 pad p4"></div>
+          <div class="pad-2 pad p5"></div>
+          <div class="pad-2 pad p6"></div>
+          <div class="pad-2 pad p7"></div>
+        </div>
+      </div>
+      <div class="beat-row-wrapper">
+        <div class="options">
+          <i class="fas fa-volume-mute fa-2x"></i>
+          <h2>Snare</h2>
+          <select id="hi-hat">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="beat-pads snare">
+          <div class="pad-3 pad p0"></div>
+          <div class="pad-3 pad p1"></div>
+          <div class="pad-3 pad p2"></div>
+          <div class="pad-3 pad p3"></div>
+          <div class="pad-3 pad p4"></div>
+          <div class="pad-3 pad p5"></div>
+          <div class="pad-3 pad p6"></div>
+          <div class="pad-3 pad p7"></div>
+        </div>
+      </div>
+      <div class="beat-row-wrapper">
+        <div class="options">
+          <i class="fas fa-volume-mute fa-2x"></i>
+          <h2>Kick</h2>
+          <select id="hi-hat">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="beat-pads kick">
+          <div class="pad-4 pad p0"></div>
+          <div class="pad-4 pad p1"></div>
+          <div class="pad-4 pad p2"></div>
+          <div class="pad-4 pad p3"></div>
+          <div class="pad-4 pad p4"></div>
+          <div class="pad-4 pad p5"></div>
+          <div class="pad-4 pad p6"></div>
+          <div class="pad-4 pad p7"></div>
+        </div>
+      </div>
+      <div class="slidecontainer">
+        <label for="input" id="demo">bpm: *</label>
+        <input
+          type="range"
+          min="1"
+          max="240"
+          value="120"
+          class="slider"
+          id="myRange"
+        />
+        <i class="fas fa-play fa-2x play"></i>
+      </div>
+    </div>
+
+    <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
+    <audio class="snare-sound" src="./allSounds/snare-acoustic01.wav"></audio>
+    <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
