@@ -151,8 +151,12 @@ label {
 }
 .active-4 {
   background-color: #5343db;
-}
-
-.active-big {
-  transform: scale(1.5);
+  
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
